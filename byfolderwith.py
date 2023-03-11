@@ -269,7 +269,7 @@ classifier = GaussianNB()
 (nb_acc, nb_precision, nb_recall, nb_fvalue) = train_model('Naive Bayes', classifier, X_train_tfidf, y_train, X_test_tfidf, y_test)
 
 # NN
-# 可以尝试多层的神经网络结构，每一层多个神经元，从而取得最好的效果。
+# 
 classifier = MLPClassifier(hidden_layer_sizes=(512, 512, 512), max_iter=1000, random_state=RANDOM_STATE)
 # (nn_acc, nn_precision, nn_recall, nn_fvalue) = train_model('Neural Network', classifier, X_train_tfidf, y_train, X_test_tfidf, y_test)
 (nn_acc, nn_precision, nn_recall, nn_fvalue) = train_model('Neural Network', classifier, X_train_tfidf, y_train, X_test_tfidf, y_test)
